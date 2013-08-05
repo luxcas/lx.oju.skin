@@ -5,26 +5,29 @@ version = '1.0'
 
 setup(name='lx.oju.skin',
       version=version,
-      description="An installable theme for Plone 4",
+      description="Tema Plone 4 OJU",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
         "Framework :: Plone",
+        "Framework :: Zope2",
+        "Framework :: Zope3",
         "Programming Language :: Python",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      keywords='web zope plone theme skin',
+      author='Lucas Aquino',
+      author_email='contato@lucasaquino.com.br',
+      url='http://www.lucasaquino.com.br',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['oju'],
+      namespace_packages=['oju','lx.oju'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.theming'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
@@ -33,6 +36,4 @@ setup(name='lx.oju.skin',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["ZopeSkel"],
       )
