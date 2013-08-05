@@ -50,87 +50,30 @@
 
 
 <script type="text/javascript">
-jq(function() {
+$(function() {
 
-//jq('.boximagemUm').tipsy({gravity: 's',fade: true});
-jq('#portal-siteactions a').tipsy({gravity: 'n',fade: true});
-jq('.galeryAlt').tipsy({gravity: 's',fade: true});
+//$('.boximagemUm').tipsy({gravity: 's',fade: true});
+$('#portal-siteactions a').tipsy({gravity: 'n',fade: true});
+$('.galeryAlt').tipsy({gravity: 's',fade: true});
 
-jq('.noticiafoto').fancybox({'titlePosition'  : 'inside','transitionIn'	: 'elastic','transitionOut'	: 'elastic','easingIn'      : 'easeOutBack','easingOut'     : 'easeInBack'});
-jq('.galeriaFancy').fancybox({'titlePosition'  : 'inside','transitionIn'	: 'elastic','transitionOut'	: 'elastic','easingIn'      : 'easeOutBack','easingOut'     : 'easeInBack'});
-jq('.boximagemUm').fancybox({'titlePosition'  : 'inside'});
+$('.noticiafoto').fancybox({'titlePosition'  : 'inside','transitionIn'	: 'elastic','transitionOut'	: 'elastic','easingIn'      : 'easeOutBack','easingOut'     : 'easeInBack'});
+$('.galeriaFancy').fancybox({'titlePosition'  : 'inside','transitionIn'	: 'elastic','transitionOut'	: 'elastic','easingIn'      : 'easeOutBack','easingOut'     : 'easeInBack'});
+$('.boximagemUm').fancybox({'titlePosition'  : 'inside'});
 
 
-jq('.tileImage').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
-jq('.newsImage').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
-//jq('.ImageGalery').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
-//jq('.photoAlbumEntry').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
+$('.tileImage').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
+$('.newsImage').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
+//$('.ImageGalery').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
+//$('.photoAlbumEntry').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
 
-jq('.bnewsImage').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
-jq('.caixaImagem').corner("round 14000px");
-jq('.boxmaisgalerias').corner("round 14000px");
+$('.bnewsImage').corner("round 14000px").parent().css('padding', '15px').corner("round 14000px");
+$('.caixaImagem').corner("round 14000px");
+$('.boxmaisgalerias').corner("round 14000px");
 });
 
 
 </script>
 
-
-<style>
-
-.photoAlbumEntry {
-background:transparent;    
-background-image:none;
-    background-repeat: no-repeat;
-    float: left;
-    height: auto;
-    margin: 10px 20px 0 0;
-    overflow: hidden;
-    padding: 0 6px 0 9px;
-    position: relative;
-    text-align: center;
-    width: auto;
-}
-
-.photoAlbumEntry a {border:medium none !important;}
-
-/*
-.photoAlbumEntry {
-background:#333333;    
-background-image:none;
-    background-repeat: no-repeat;
-    float: left;
-    height: auto;
-    margin: 10px 20px 0 0;
-    overflow: hidden;
-    padding: 0 6px 0 9px;
-    position: relative;
-    text-align: center;
-    width: auto;
-}
-
-.photoAlbumEntry a {
-
-    height: 169px;
-    margin: 0px auto 0;
-    width: 160px;
-}
-*/
-
-.tipsy { padding: 5px; font-size: 13px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: url(tipsy.gif); }
-
-  .tipsy-inner { padding: 10px 18px 10px 18px; background-color: #333333; max-width: 800px; color: white; text-align: center; }
-
-  .tipsy-inner { -moz-border-radius:300px; -webkit-border-radius:300px; }
-
-  .tipsy-north { background-position: top center; }
-
-  .tipsy-south { background-position: bottom center; }
-
-  .tipsy-east { background-position: right center; }
-
-  .tipsy-west { background-position: left center; }
-
-</style>
 
 </head>
 
