@@ -5,7 +5,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="OJUSkin"
+      title="OJU Tema"
       directory="profiles/default"
       description='Extension profile for the "OJUSkin" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
