@@ -9,7 +9,7 @@ from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
 ptc.setupPloneSite()
 
-import oju.skin
+import lx.oju.skin
 
 
 class TestCase(ptc.PloneTestCase):

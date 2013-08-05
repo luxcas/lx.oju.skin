@@ -7,34 +7,139 @@
 
 /* YOUR CSS RULES START HERE */
 
+#portal-column-content{
+width:1015px;
+}
+
+
+.bnewsImage{
+background:#000;
+height: 400px;
+width: 400px;
+
+border:10px solid #000000;	 
+}
+
+.portaltype-plone-site .contentItensArea {visibility: hidden !important;
+}
+
+.gu2 {
+    width: 255px;
+}
+
+/*
+#portaltab-sobre-o-site a {
+    width: 165px !important;
+}
+#portaltab-imagetica a {
+    width: 150px !important;
+}
+#portaltab-produtos-servicos a {
+    width: 170px !important;
+}
+*/
+
+.portaltype-plone-site .fontSubMenu {
+    color: #FCCDBB !important;
+}
+
+.selected .fontSubMenu {
+font-weight:bold;
+}
+
+.LSBox{
+
+}
+
+/*
+.contentItensArea{
+width:200px !important;
+}
+*/
+
+.fontSubMenu{
+font-size:10pt !important;
+}
+
+.section-title{
+width:555px;
+}
+
+.contents-sobre{
+margin-top: 52px;
+width: 210px;
+margin-left: 29px;
+display:none;
+}
+#header-sobre .col, #header-produtos .col{
+    height: 150px;
+}
+
+ul, ol {
+    list-style: disc outside none;
+}
+
+.navigation-portal{
+
+text-align: right;
+ width: 167px;
+ z-index:999;
+ position:relative;
+}
+
+.navigation-portal li{
+display:block !important ;
+}
+
 #visual-portal-wrapper{
   width:1026px;
   margin:0 auto;
 }
 
 body {
-  font:100% trebuchet MS,verdana;
+  font:100% "trebuchet MS",verdana;
   background:url("bg-home.jpg") repeat-x scroll 0 0 transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family:"trebuchet MS", verdana;
+  font-weight: normal;
+}
+
+h1{font-size:24pt;}
+h2{font-size:18pt;}
+
+
+.tileFooter{
+  text-align:right !important;
+  
+}
+
+.section-sobre-o-site{
+  background:url("bg-sobre.jpg") repeat-x scroll 0 0 #FEEEE8;
+}
+.section-produtos-servicos{
+  background:url("bg-produtos.jpg") repeat-x scroll 0 0 #E9E8E8;
+}
+.section-imagetica{
+  background:url("bg-imagetica.jpg") repeat-x scroll 0 0 #E5D6CA;
+}
+.section-africanidades{
+  background:url("bg-processos.jpg") repeat-x scroll 0 0 #F5E6E7;
+}
+.section-noticias{
+  background:url("bg-noticias.jpg") repeat-x scroll 0 0 #E5F1EF;
 }
 
 .template-pagina-inicial{
-  background:url("bg-home.jpg") repeat-x scroll 0 0 transparent;
+background-color: transparent;
 }
-.section-sobre-o-site{
-  background:url("bg-home.jpg") repeat-x scroll 0 0 transparent;
+
+.template-pagina-inicial #portal-columns{
+background:#FFFFFF !important;
 }
-.section-produtos-servicos{
-  background:url("bg-produtos.jpg") repeat-x scroll 0 0 transparent;
-}
-.section-imagetica{
-  background:url("bg-imagetica.jpg") repeat-x scroll 0 0 transparent;
-}
-.section-processos-e-poeticas-visuais{
-  background:url("bg-processos.jpg") repeat-x scroll 0 0 transparent;
-}
-.section-noticias{
-  background:url("bg-noticias.jpg") repeat-x scroll 0 0 transparent;
-}
+
+
+
 
 
 
@@ -60,35 +165,66 @@ a:hover {
     height: 100px;
 }
 
+
+
+#header-sobre, #header-processos, #header-produtos, #header-imagetica, #header-noticias{ display:none;}
+
+.section-sobre-o-site #header-sobre{
+  display:block;
+}
+
+.section-africanidades #header-processos{display:block}
+.section-produtos-servicos #header-produtos{display:block;}
+.section-imagetica #header-imagetica{display:block}
+.section-noticias #header-noticias{display:block}
+
+.section-produtos-servicos .contents-sobre{
+    margin-left: 195px;
+  margin-top: 40px;
+  width: 130px;
+}
+.section-africanidades .contents-sobre{
+  margin-top: 68px;
+  margin-left: 20px;}
+  
+.section-imagetica .contents-sobre{
+
+    margin-left: 15px;
+    margin-top: 87px;
+    width: 215px;
+}
+
+
+/*.section-sobre-o-site #portal-globalnav {display:none;}
+.section-africanidades #portal-globalnav{display:none;}
+.section-produtos-servicos #portal-globalnav{display:none;}
+.section-imagetica #portal-globalnav{display:none;}
+.section-noticias  #portal-globalnav{display:none;}
+.section-noticias  .row { margin-left: -10px;}
+.template-pagina-inicial #portal-globalnav{display:block !important;}*/
+.template-pagina-inicial .navigation-portal , .template-pagina-inicial .logotop{ display:none !important;}
+
+
+
+
+
+
+
+
+
+
 .boximagemUm{
 background: url("bg_contentHome01.png") no-repeat scroll 0 0 transparent;
     height: 463px;
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 .boximagemDois{
 z-index:1;
-height: 436px;
-margin-top: -463px;
-z-index: 1;
-}
-
-
-
-.section-sobre-o-site{
-  background:url("bg-sobre.jpg") repeat-x scroll 0 0 transparent;
-}
-.boximagemUm{
-background: url("bg_contentHome01.png") no-repeat scroll 0 0 transparent;
-    height: 463px;
-    position: relative;
-    z-index: 2;
-}
-.boximagemDois{
-z-index:1;
-height: 436px;
-margin-top: -463px;
-z-index: 1;
+height: 434px;
+margin-top: -466px;
+background:#000000;
 }
 
 .section-produtos-servicos
@@ -106,7 +242,7 @@ background: url("bg_contentHome04.png") no-repeat scroll 0 0 transparent;
     z-index: 2;
 }
 
-.section-processos-e-poeticas-visuais
+.section-africanidades
 .boximagemUm{
 background: url("bg_contentHome05.png") no-repeat scroll 0 0 transparent;
     height: 463px;
@@ -123,13 +259,77 @@ background: url("bg_contentHome06.png") no-repeat scroll 0 0 transparent;
 }
 
 
+h1,h2{
+color:#f15a22;
+}
+.section-africanidades h1, .section-africanidades h2{
+color:#9e0b0f;  
+} 
+.section-noticias h1, .section-noticias h2{
+color:#007a5e;
+}
+.section-imagetica h1, .section-imagetica h2{
+color:#000000;
+}
+.section-produtos-servicos h1, .section-produtos-servicos h2{
+color:#000;
+}
+
+
+.section-sobre-o-site #portal-columns{
+margin-top: -34px;
+z-index: 999;
+}
+
+.section-africanidades #portal-columns{
+background:#F5E6E7;
+margin-top: -34px;
+z-index: 999;
+}
+.section-produtos-servicos #portal-columns{
+background:#E9E8E8;
+margin-top: -34px;
+z-index: 999;
+}
+.section-noticias #portal-columns{
+background:#e5f1ef;
+margin-top: -34px;
+z-index: 999;
+}
+
+.section-imagetica #portal-columns{
+background:#e5d6ca;
+margin-top: -34px;
+z-index: 999;
+}
+
+#portal-columns{
+background:#feeee8;
+}
+
+.template-pagina-inicial #portal-columns{
+margin-top: 0 !important; 
+z-index: 999;
+}
 
 
 
+#content h1.documentFirstHeading {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+
+#content .documentDescription, #content #description {
+    color: #666666;
+    font: bold 1.25em  "trebuchet MS",verdana;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
 
 .boxImagemHome{
 margin: 27px auto 0;
-width: 405px;    
+width: 414px;    
 }
 
 
@@ -139,9 +339,180 @@ width: 405px;
     
 }
 
-#headermenu{
-    height: 151px;
+#headermenu{height: 151px;}
+
+#headermenu li{
+font-size: 10pt;
+display: list-item;
 }
+
+#headermenu li a{color:#f9a981; text-transform: lowercase;}
+
+#headermenu li a:hover {color:#f15a22;}
+
+#headermenu p{
+    color: #FFFFFF;
+    font-size: 26pt;
+    margin-left: 215px;
+    margin-top: 105px;
+}
+
+
+
+
+
+#headermenu li a:selected{color:#f15a22;}
+
+.section-sobre-o-site #headermenu li{color: #F9A981;}
+.section-sobre-o-site #headermenu li a{color: #F9A981;}
+.section-sobre-o-site #headermenu li a:hover{color:#f15a22;}
+
+.section-africanidades #headermenu li{color: #c6826e;}
+.section-africanidades #headermenu li a{color: #c6826e;}
+.section-africanidades #headermenu li a:hover{color:#9E0B0F;}
+.section-imagetica #headermenu li {color:#b28069;}
+.section-imagetica #headermenu li a{color:#b28069;}
+.section-imagetica #headermenu li a:hover{color:#7b2800;}
+.section-produtos-servicos #headermenu li{color:#898787;}
+.section-produtos-servicos #headermenu li a{color:#898787;}
+.section-produtos-servicos #headermenu li a:hover{color:#000000;}
+
+
+
+
+
+
+
+.section-produtos-servicos #headermenu p {margin-left: 70px; /*display:none;*/ }
+.section-noticias #headermenu p {margin-left: 250px;   text-align: center;}
+.section-africanidades #headermenu p {margin-left: 20px; /* color:#D8BDB2;*/}
+.section-sobre-o-site  #headermenu p {/*display:none;*/}
+.section-imagetica #headermenu p {
+  margin-left: 15px;
+   width: 150px;
+
+}
+
+
+
+
+.section-noticias .documentFirstHeading{
+/*display:none;*/
+}
+
+
+
+#portaltab-produtos-servicos a, #portaltab-produtos-servicos a:hover{color:#000000 !important;}
+#portaltab-imagetica a, #portaltab-imagetica a:hover{color:#7B2800 !important; }
+#portaltab-africanidades a, #portaltab-africanidades a:hover{color:#9E0B0F !important;}
+#portaltab-noticias a, #portaltab-noticias a:hover{color:#007A5E !important; width: 100px !important;}
+
+#portaltab-sobre-o-site a{
+
+  text-align:left !important;
+
+  color:#f15a22;
+}
+
+
+.section-sobre-o-site .menu ul li, .subtab-sobre-o-site li {
+color:#f15a22;
+}
+
+
+.subtab-imagetica li a,.subtab-imagetica li {
+   color: #7B2800 !important;
+}
+
+#portal-globalnav .subtab-imagetica li{
+    color: #7B2800 !important;
+
+}
+
+
+
+.section-produtos-servicos .subtab-sobre-o-site li {
+color:#f15a22;
+}
+
+
+.section-produtos-servicos .menu ul li {
+color:#000000;
+}
+.section-imagetica .menu ul li {
+color:#7B2800;
+}
+
+
+
+#portaltab-noticias a{
+    padding-right: 0 !important;
+    /*text-align: right !important;
+    width: 127px !important;*/
+    
+}
+
+#portaltab-noticias{
+    width: 80px !important;
+    
+}
+
+.section-sobre-o-site #portal-globalnav .selected a{color:#f15a22;}
+.section-produtos-servicos #portal-globalnav .selected a{color:#000000;}
+.section-noticias #portal-globalnav .selected a{color:#007A5E;}
+.section-africanidades #portal-globalnav .selected a{color:#9E0B0F;}
+.section-imagetica #portal-globalnav .selected a{color:#7B2800;}
+
+.section-noticias .logotop {
+    width: 50px;
+}
+.section-imagetica .logotop {
+    width: 50px;
+}
+.section-noticias .navigation-portal{
+
+text-align: right;
+}
+.section-africanidades .navigation-portal{
+
+}
+.section-produtos-servicos .navigation-portal{
+
+}
+
+.section-noticias .navigation-portal li a{
+color:#007a5e !important;
+}
+.section-sobre-o-site .navigation-portal li a{
+color:#f15a22 !important;
+}
+.section-africanidades .navigation-portal li a{
+color:#9e0b0f !important;
+}
+.section-imagetica .navigation-portal li a{
+color:#7b2800 !important;
+}
+.section-produtos-servicos .navigation-portal li a{
+color:#000000 !important;
+}
+
+.section-noticias .section-title{
+text-align: left;
+    width: 735px;
+}
+.section-sobre-o-site .section-title{}
+.section-africanidades .section-title{text-align: left;}
+.section-imagetica .section-title{
+text-align:right;
+width: 215px;
+}
+.section-produtos-servicos .section-title{
+margin-left: 135px;
+    width: 430px;
+}
+
+
+
 
 #portal-globalnav {
     background: transparent;
@@ -153,13 +524,12 @@ width: 405px;
 
 #portal-globalnav li a {
 display: inline-block;
-padding: 0.5em 0em 2em 0em;
+padding: 0em 0 0 16px;
 background: transparent;
 min-width: 6em;
 white-space: normal;
-border-right: 0.1em solid white;
-width: 250px;
-text-align:center;
+border-right: 0.1em none white;
+ width: 212px;
 font-size: 14pt;
 }
 #portal-globalnav .selected a,
@@ -173,33 +543,6 @@ color: #f15a22;
 background: transparent;
 
 }
-
-#portaltab-sobre-o-site a{
-  padding-left:0 !important;
-  text-align:left !important;
-  width: 110px !important;
-  color:#f15a22;
-}
-
-#portaltab-produtos-servicos a{
-  color: #231f20;
-}
-#portaltab-imagetica a{
-  color:#7b2800;
-}
-#portaltab-processos-e-poeticas-visuais a{
-  color:#9e0b0f;
-}
-
-#portaltab-noticias a{
-    padding-right: 0 !important;
-    text-align: right !important;
-    width: 127px !important;
-    color:#007a5e;
-    
-}
-
-
 #portal-siteactions {
     font-size:14pt;
     padding-bottom: 2em;
@@ -230,17 +573,21 @@ a:link, a:visited {
 
 .boxBusca{
   float:left;
-  margin-left: 75px;
+  margin-left: 110px;
    margin-top: 5px;
 }
 #portal-searchbox  input.searchField {
+ background: url("bgBusca.png") no-repeat scroll left 0 #FFFFFF;
+    border: 1px none #000000;
     height: 30px;
-    width: 200px;
+    padding: 3px 5px;
+    width: 157px;
 }
 
 .en-version{
   color:#231f20;
   font-size:12pt;
+ margin-left: 5px;
 }
 
 .fichat{
@@ -254,11 +601,316 @@ a:link, a:visited {
 
 .info-obra{
   font-size:9pt;
+ text-align: right;
+ width: 320px;
 }
 
 
+#content div.newsImageContainer p.discreet {
+background: url("bg_legenda.png") no-repeat scroll center 0 transparent;
+    font-size: 100%;
+    font-weight: normal;
+    padding: 30px;
+    text-align: center;
+    width: 150px;
+
+}
+
+.legendaCurve{
+background: url("bg_legenda.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    height: 200px;
+
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+.legendaCurve span{color: #FFFFFF !important;}
 
 
+#content img.tileImage, #content div.newsImageContainer {
+/* background: url("bg_espelho_imagem_sobre.png") no-repeat scroll center top transparent;*/
+    clear: both;
+    margin: 0 0 0 4em;
+    text-align: center;
+
+}
+
+.legenda{
+     padding: 24px !important;
+   /* width: 137px !important;*/
+}
+.logotop{
+width: 50px;
+}
+
+h1,h2,h3,h4{
+color:#f15a22;
+}
+
+
+.section-noticias h1 a, .section-noticias h1 a:hover,
+.section-noticias h2 a, .section-noticias h2 a:hover
+{
+color:#007A5E !important;
+}
+.section-africanidades .navigation-portal{
+
+}
+.section-imagetica .navigation-portal{
+
+}
+.section-produtos-servicos .navigation-portal{
+
+}
+
+
+#content p, #content table, #content dl, dl.portlet p, dl.portlet {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+.bannerImagetica{display: none;}
+.template-home-imagetica .bannerImagetica{ display:block; margin-left: -10px;}
+
+
+
+.guImagetica {margin-left: 6px;
+    }
+
+.guImageticaMenu{width: 900px;}
+
+.section-imagetica div.width-3\:4 {
+    width: 87.75%;
+}
+
+.section-imagetica div.position-3\:4 {
+    margin-left: -126px;
+}
+.section-imagetica div.width-1\:4 {
+ background: none repeat scroll 0 0 #FFFFFF;
+    width: 126px;
+}
+
+.bannersImagetica{background:#ffffff;width: 126px;}
+
+.navigation-imagetica{margin-left: -5px !important;}
+.navigation-imagetica li a{
+  background:#C5A782;
+    color: #FFFFFF !important;
+    font-size: 10pt;
+    padding: 3px 6px;
+}
+.navigation-imagetica li a:hover{
+  background:#996a2f;
+  color:#FFFFFF !important;
+}
+
+#content a:hover,
+dl.portlet a:hover {
+    color: #000000; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+}
+
+.template-pagina-inicial #content, .template-pagina-inicial #viewlet-below-content, .template-pagina-inicial .discussion {
+    font-size: 100%;
+    margin: 0 auto;
+    width: auto;
+}
+
+#content, #viewlet-below-content, .discussion {
+    font-size: 100%;
+    margin: 0 auto;
+    width: 985px;
+}
+
+
+.textoObra{width: 278px;}
+
+.menu-content{}
+.menu-portal{}
+.topbuild{float:left;height: 150px;}
+
+.section-imagetica .col0{
+  
+   display: block;
+    height: 150px;
+    width: 440px;
+}
+.template-pagina-inicial  #headermenu p{
+  display:none;
+}
+.section-imagetica .col1{width: 344px;}
+.section-imagetica .col2{}
+.section-imagetica .col3{}
+
+
+.section-africanidades .col0{
+  
+   display: block;
+    height: 150px;
+    width: 592px;
+}
+.section-africanidades .col1{width: 189px;}
+.section-africanidades .col2{}
+.section-africanidades .col3{}
+
+
+.col0{}
+.col1{}
+.col2{}
+.col3{}
+
+body.largeText { font-size: 200%; }
+body.smallText { font-size: 85%; }
+
+
+.boxImagemEspelhoUm{
+background: url("bg_espelho_imagem.png") no-repeat scroll 0 0 transparent;
+    height: 465px;
+    position: relative;
+    width: 467px;
+}
+.section-sobre-o-site .boxImagemEspelhoUm{ background: url("bg_espelho_imagem_sobre.png") no-repeat scroll 0 0 transparent;}
+.section-produtos-servicos .boxImagemEspelhoUm{ background: url("bg_espelho_imagem_produtos.png") no-repeat scroll 0 0 transparent;}
+.section-noticias .boxImagemEspelhoUm{ background: url("bg_espelho_imagem_noticias.png") no-repeat scroll 0 0 transparent;}
+.section-africanidades .boxImagemEspelhoUm{ background: url("bg_espelho_imagem_africanidades.png") no-repeat scroll 0 0 transparent;}
+.section-imagetica .boxImagemEspelhoUm{ background: url("bg_espelho_imagem_imagetica.png") no-repeat scroll 0 0 transparent;}
+
+.boxImagemEspelhoDois{
+  margin-left: 0;
+    margin-right: auto;
+    margin-top: -440px;
+}
+
+.espelho_summary_imageUm{
+background: url("bg_espelhoImageMiniNoticias.png") no-repeat scroll 0 0 transparent;
+    height: 151px;
+    position: relative;
+    width: 151px;
+}
+
+.espelho_summary_imageDois{
+ margin-left: 0;
+    margin-right: auto;
+    margin-top: -151px;
+    width: 151px;
+}
+
+.logo_espelho{
+  height: 135px;
+  width: 65px;
+  position: relative;
+}
+
+
+.section-sobre-o-site .logo_espelho{background: url("logo-sobre.png") no-repeat scroll 0 0 transparent;}
+.section-produtos-servicos .logo_espelho{background: url("logo-produtos.png") no-repeat scroll 0 0 transparent;}
+.section-noticias .logo_espelho{background: url("logo-noticias.png") no-repeat scroll 0 0 transparent;}
+.section-africanidades .logo_espelho{background: url("logo-processos.png") no-repeat scroll 0 0 transparent;}
+.section-imagetica .logo_espelho{background: url("logo-imagetica.png") no-repeat scroll 0 0 transparent;}
+
+
+.imagem_espelho{
+  margin-top: -100px;
+  
+}
+
+.listGeral{}
+
+.listItem{
+  margin:20px 0;
+}
+
+
+.listGeralGaleria{
+  width:590px;
+  float:right;
+}
+
+.galeriaText{
+  width:360px;
+  float:left;
+}
+.gufirst{
+width: 220px;
+}
+.footerall{
+background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    height: 145px;
+    margin: 0 0 0 205px;
+    width: 1032px !important;
+}
+
+.allfooter{
+background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    display: block;
+    height: 145px;
+}
+
+.boxNews{
+    display:none;
+    margin: 50px 0 0 240px;
+    position: absolute;
+    text-align: right;
+}
+.boxNews h3{
+    color:#FFFFFF;
+    
+}
+
+
+.portaltype-plone-site .boxNews {
+    display:block;
+}
+
+.caixaImagem{
+    border: 10px solid #333333;
+    float: right;
+    width:100px;
+    height:100px;
+}
+
+.boxmaisgalerias a, .boxmaisgalerias a:hover{
+    color:#FFFFFF !important; 
+    border:none !important;
+}
+.boxmaisgalerias{
+ background: none repeat scroll 0 0 #F15A22;
+    clear: both;
+    padding: 58px 12px 73px 26px;
+    width: 120px;
+}
+
+.footer-geral{
+	margin: 0 auto;
+	    width: 1026px;
+}
+.midias_contato{
+ float: left;
+    width: 495px;
+}
+.busca{
+	float: left;
+	    width: 500px;
+}
+.sl-col1{
+	float: left;
+	    width: 230px;
+}
+.sl-col2{
+	float: left;
+    width: 440px;
+}
+.sl-col3{
+	float: left;
+	    width: 330px;
+	
+}
+	
+	
+	
 /* YOUR CSS RULES STOP HERE */
 
 /* </dtml-with> */

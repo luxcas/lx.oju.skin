@@ -1,7 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="oju.skin">
+    i18n_domain="lx.oju.skin">
 
   <genericsetup:registerProfile
       name="default"
@@ -15,7 +15,7 @@
       name="oju.skin.various"
       title="OJUSkin: miscellaneous import steps"
       description="Various import steps that are not handled by GS import/export handlers."
-      handler="oju.skin.setuphandlers.setupVarious">
+      handler="lx.oju.skin.setuphandlers.setupVarious">
     <depends name="skins"/>
   </genericsetup:importStep>
 
