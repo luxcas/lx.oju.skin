@@ -18,7 +18,14 @@
       layer=".interfaces.IThemeSpecific"
       permission="zope2.View"
       />
-
+  
+  <browser:viewlet
+      name="plone.global_sections"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.GlobalSectionsViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
 
   <!-- Zope 3 browser resources -->
 

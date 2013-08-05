@@ -27,17 +27,6 @@ border:10px solid #000000;
     width: 255px;
 }
 
-/*
-#portaltab-sobre-o-site a {
-    width: 165px !important;
-}
-#portaltab-imagetica a {
-    width: 150px !important;
-}
-#portaltab-produtos-servicos a {
-    width: 170px !important;
-}
-*/
 
 .portaltype-plone-site .fontSubMenu {
     color: #FCCDBB !important;
@@ -51,11 +40,7 @@ font-weight:bold;
 
 }
 
-/*
-.contentItensArea{
-width:200px !important;
-}
-*/
+
 
 .fontSubMenu{
 font-size:10pt !important;
@@ -75,10 +60,10 @@ display:none;
     height: 150px;
 }
 
-ul, ol {
+/*ul, ol {
     list-style: disc outside none;
 }
-
+*/
 .navigation-portal{
 
 text-align: right;
@@ -137,11 +122,6 @@ background-color: transparent;
 .template-pagina-inicial #portal-columns{
 background:#FFFFFF !important;
 }
-
-
-
-
-
 
 
 a {

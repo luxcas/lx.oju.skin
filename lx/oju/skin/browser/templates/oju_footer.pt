@@ -1,57 +1,64 @@
-
-<div class="row">
-    <div class="col gu3">
-      <span id="portal-siteactions"
-          tal:define="accesskeys python: {'sitemap' : '3', 'accessibility' : '0', 'contact' : '9'};"
-          tal:condition="view/site_actions"
-          i18n:domain="plone">
+<div class="footer-geral">
+	<div class="first-line-footer">
+	    <div class="midias_contato">
+	      <span id="portal-siteactions"
+	          tal:define="accesskeys python: {'sitemap' : '3', 'accessibility' : '0', 'contact' : '9'};"
+	          tal:condition="view/site_actions"
+	          i18n:domain="plone">
       
-          <tal:block tal:repeat="saction view/site_actions"
-              tal:attributes="id string:siteaction-${saction/id}">
-            &bull;    
-            <a
-                 href=""
-                 tal:define="title saction/title;
-                             id saction/id;
-                             accesskey python: accesskeys.get(id, '');"
-                 i18n:attributes="title"
-                 i18n:translate=""
-                 tal:content="title"
-                 tal:attributes="href saction/url;
-                                 title title;
-                                 accesskey accesskey;"
-                 >Site action</a>
+	          <tal:block tal:repeat="saction view/site_actions"
+	              tal:attributes="id string:siteaction-${saction/id}">
+             
+	            <a
+	                 href=""
+	                 tal:define="title saction/title;
+	                             id saction/id;
+	                             accesskey python: accesskeys.get(id, '');"
                 
-          </tal:block>
-      </span>
-    </div>
-    <div class="col gu3">
-        <div metal:use-macro="context/macro-busca/macros/box"></div>
-    </div>
-</div>
+                 
+                 
+	                 tal:attributes="href saction/url;
+	                                 title title;
+	                                 accesskey accesskey;"
+	                 >
+	                <img src="" tal:attributes="src saction/icon;
+	                                            alt title;
+	                                            title title;" />
 
-<div class="row">
-    <div class="col gu2">
-        <span class="en-version">english</span>
-        &nbsp;
-        <span class="fichat"> ficha técnica</span>
-    </div>
-    <div class="col gu2 guExtra" tal:define="lista python:context.portal_catalog(path= {'query': context.portal_url.getPortalPath()+'/banners', 'depth':1})">
+	             </a>
+                
+	          </tal:block>
+	      </span>
+	    </div>
+	    <div class="busca">
+	        <div metal:use-macro="context/macro-busca/macros/box"></div>
+	    </div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="second-line-footer">
+	    <div class="sl-col1">
+	        <span class="en-version" ><a tal:attributes="href string:${context/portal_url}/english">English</a></span>
+	        &nbsp;&bull;&nbsp;
+	        <span class="fichat"> <a href="" tal:attributes="href string:${context/portal_url}/ficha-tecnica">ficha técnica</a></span>
+	    </div>
+	    <div class="sl-col2" tal:define="lista python:context.portal_catalog(path= {'query': context.portal_url.getPortalPath()+'/banners', 'depth':1})">
         
-        <div class="item-banners" tal:repeat="item lista" >
-            <a href="" tal:attributes="href string:${item/getURL}">
-                <img  src="" alt="" title=""
-                    tal:attributes="src string:${item/getURL};
-                                   alt string: ${item/Title};
-                                   title string: ${item/Title}"/>
-            </a>
-        </div>
+	        <div class="item-banners" tal:repeat="item lista" >
+	            <a href="" tal:attributes="href string:${item/Description}">
+	                <img  src="" alt="" title=""
+	                    tal:attributes="src string:${item/getURL};
+	                                   alt string: ${item/Title};
+	                                   title string: ${item/Title}"/>
+	            </a>
+	        </div>
         
-    </div>
-    <div class="col gu2">
-        <p class="info-obra">
-            Esta obra foi selecionada pela Bolsa Funarte de Reflexão Critica e Produção Cultural para Internet
-        </p>
-    </div>
+	    </div>
+	    <div class="sl-col3">
+	        <p class="info-obra">
+	            Esta obra foi selecionada pela Bolsa Funarte de Reflexão Critica e Produção Cultural para Internet
+	        </p>
+	    </div>
   
+	</div>
 </div>
