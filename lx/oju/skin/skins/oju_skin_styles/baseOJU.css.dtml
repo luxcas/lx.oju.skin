@@ -1,0 +1,268 @@
+/*
+  This file is based on the ploneCustom.css.dtml file shipped with Plone.
+
+  <dtml-with base_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+
+/* YOUR CSS RULES START HERE */
+
+#visual-portal-wrapper{
+  width:1026px;
+  margin:0 auto;
+}
+
+body {
+  font:100% trebuchet MS,verdana;
+  background:url("bg-home.jpg") repeat-x scroll 0 0 transparent;
+}
+
+.template-pagina-inicial{
+  background:url("bg-home.jpg") repeat-x scroll 0 0 transparent;
+}
+.section-sobre-o-site{
+  background:url("bg-home.jpg") repeat-x scroll 0 0 transparent;
+}
+.section-produtos-servicos{
+  background:url("bg-produtos.jpg") repeat-x scroll 0 0 transparent;
+}
+.section-imagetica{
+  background:url("bg-imagetica.jpg") repeat-x scroll 0 0 transparent;
+}
+.section-processos-e-poeticas-visuais{
+  background:url("bg-processos.jpg") repeat-x scroll 0 0 transparent;
+}
+.section-noticias{
+  background:url("bg-noticias.jpg") repeat-x scroll 0 0 transparent;
+}
+
+
+
+
+a {
+        text-decoration: none;
+}
+a:hover {
+        text-decoration: none;
+}
+
+.canvas {
+        margin:0 auto;position:relative;
+}
+.wrapper-grid {
+}
+#header{
+    background: none repeat scroll 0 0 #F4552F;
+    height: 100px;
+}
+#footer{
+    background: none repeat scroll 0 0 #F4552F;
+    height: 100px;
+}
+
+.boximagemUm{
+background: url("bg_contentHome01.png") no-repeat scroll 0 0 transparent;
+    height: 463px;
+    position: relative;
+    z-index: 2;
+}
+.boximagemDois{
+z-index:1;
+height: 436px;
+margin-top: -463px;
+z-index: 1;
+}
+
+
+
+.section-sobre-o-site{
+  background:url("bg-sobre.jpg") repeat-x scroll 0 0 transparent;
+}
+.boximagemUm{
+background: url("bg_contentHome01.png") no-repeat scroll 0 0 transparent;
+    height: 463px;
+    position: relative;
+    z-index: 2;
+}
+.boximagemDois{
+z-index:1;
+height: 436px;
+margin-top: -463px;
+z-index: 1;
+}
+
+.section-produtos-servicos
+.boximagemUm{
+background: url("bg_contentHome01.png") no-repeat scroll 0 0 transparent;
+    height: 463px;
+    position: relative;
+    z-index: 2;
+}
+.section-imagetica
+.boximagemUm{
+background: url("bg_contentHome04.png") no-repeat scroll 0 0 transparent;
+    height: 463px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-processos-e-poeticas-visuais
+.boximagemUm{
+background: url("bg_contentHome05.png") no-repeat scroll 0 0 transparent;
+    height: 463px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-noticias
+.boximagemUm{
+background: url("bg_contentHome06.png") no-repeat scroll 0 0 transparent;
+    height: 463px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+.boxImagemHome{
+margin: 27px auto 0;
+width: 405px;    
+}
+
+
+.guExtra{
+    width: 414px;
+    text-align:center;
+    
+}
+
+#headermenu{
+    height: 151px;
+}
+
+#portal-globalnav {
+    background: transparent;
+    clear: both;
+    font-size: 80%;
+    margin: 0 0 1em;
+ 
+}
+
+#portal-globalnav li a {
+display: inline-block;
+padding: 0.5em 0em 2em 0em;
+background: transparent;
+min-width: 6em;
+white-space: normal;
+border-right: 0.1em solid white;
+width: 250px;
+text-align:center;
+font-size: 14pt;
+}
+#portal-globalnav .selected a,
+#portal-globalnav a:hover {
+background: transparent;
+color: #f15a22;
+}
+
+
+#portal-globalnav .selected a:hover {
+background: transparent;
+
+}
+
+#portaltab-sobre-o-site a{
+  padding-left:0 !important;
+  text-align:left !important;
+  width: 110px !important;
+  color:#f15a22;
+}
+
+#portaltab-produtos-servicos a{
+  color: #231f20;
+}
+#portaltab-imagetica a{
+  color:#7b2800;
+}
+#portaltab-processos-e-poeticas-visuais a{
+  color:#9e0b0f;
+}
+
+#portaltab-noticias a{
+    padding-right: 0 !important;
+    text-align: right !important;
+    width: 127px !important;
+    color:#007a5e;
+    
+}
+
+
+#portal-siteactions {
+    font-size:14pt;
+    padding-bottom: 2em;
+    text-align: left;
+    color:#231f20;
+    padding: 20px 0;
+    display: block;
+}
+#portal-siteactions li {
+    margin-right: 0.5em;
+}
+#portal-siteactions li a:hover {
+    color: #231f20;
+}
+
+a:link, a:visited {
+    color: #231f20;
+}
+
+#portal-searchbox {
+    float:none;
+    text-align: right;
+    clear: right;
+    margin: 0;
+    font-size: 14pt;
+    padding: 20px 0;
+}
+
+.boxBusca{
+  float:left;
+  margin-left: 75px;
+   margin-top: 5px;
+}
+#portal-searchbox  input.searchField {
+    height: 30px;
+    width: 200px;
+}
+
+.en-version{
+  color:#231f20;
+  font-size:12pt;
+}
+
+.fichat{
+  color:#231f20;
+  font-size:12pt;
+}
+.item-banners{
+  float:left;
+  margin:0 10px ;
+}
+
+.info-obra{
+  font-size:9pt;
+}
+
+
+
+
+/* YOUR CSS RULES STOP HERE */
+
+/* </dtml-with> */
+
+/* Latest version of the documentation on pre-defined properties from Plone 
+   can be found in CMFPlone/skins/plone_styles/ploneCustom.css.dtml */
+

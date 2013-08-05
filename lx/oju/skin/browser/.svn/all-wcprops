@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/52/trunk/plone3/oju.skin/oju/skin/browser
+END
+configure.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/52/trunk/plone3/oju.skin/oju/skin/browser/configure.zcml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/52/trunk/plone3/oju.skin/oju/skin/browser/__init__.py
+END
+viewlets.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/52/trunk/plone3/oju.skin/oju/skin/browser/viewlets.py
+END
+interfaces.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/52/trunk/plone3/oju.skin/oju/skin/browser/interfaces.py
+END

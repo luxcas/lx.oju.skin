@@ -1,0 +1,32 @@
+/*
+1000px grid system ~ Core CSS.
+6 Columns ~ Margin left: 20px
+
+Based on the simple grid system - http://www.webnicer.com/
+by Jacek Ciolek
+
+Created by the Grid System Generator - v1.00
+Learn more ~ http://www.gridsystemgenerator.com/
+*/
+
+/* clearfix */
+.clearfix:after, .row:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix, .row {display:inline-block;} /*Those two .clearfix have to be separate!)*/
+.clearfix, .row {display:block;}
+
+/* gridframework */
+.row {position:relative; margin-left:-20px;}
+.gu1 .row {width: 170px;}
+.gu2 .row {width: 340px;}
+.gu3 .row {width: 510px;}
+.gu4 .row {width: 680px;}
+.gu5 .row {width: 850px;}
+.gu6 .row {width: 1020px;}
+
+.col {padding-left:20px; float:left; position:relative;}
+.gu1{width: 150px;}
+.gu2{width: 273px;}
+.gu3{width: 490px;}
+.gu4{width: 660px;}
+.gu5{width: 830px;}
+.gu6{width: 1000px;}

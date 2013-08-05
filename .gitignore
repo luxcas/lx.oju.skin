@@ -1,4 +1,8 @@
 *.py[cod]
+*.py[co]
+*.pyc
+*.git
+*.svn-base
 
 # C extensions
 *.so
