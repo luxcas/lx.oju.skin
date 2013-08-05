@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<metal:block metal:define-macro="portlet">
+
+<div class="bannersImagetica" tal:define=" caminho python: context.portal_url.getPortalPath()+'/banners-imagetica';
+                                              lista python:context.portal_catalog(path={'query':caminho, 'depth':1},
+                                                                                  sort_on='getObjPositionInParent')">
+    
+    <div class="item-banner" tal:repeat="item lista">
+            <img src="" tal:attributes="src string:${item/getURL}/image_thumb;
+                                        title item/Title;
+                                        alt   item/Title"  />
+    </div>
+
+</div>
+
+</metal:block>

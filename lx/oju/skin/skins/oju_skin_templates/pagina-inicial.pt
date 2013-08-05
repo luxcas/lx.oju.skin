@@ -1,0 +1,29 @@
+<metal:block metal:use-macro="context/main_template/macros/master">
+<meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+    <metal:block metal:fill-slot="main">
+    	<div class="canvas gu6">
+            <div class="wrapper-grid">
+                <div class="row">
+                  <div class="col gu6" tal:define="caminho python:'/'.join(context.getPhysicalPath());
+                                                   lista python:context.portal_catalog(path={'query':caminho}, id='capa-destaque')[:1]">
+
+                    <tal:block repeat="item lista">
+                        <div class="boximagemUm" tal:attributes="href string:${item/getURL}/capa-destaque?ext=.jpg;
+                                                                alt string:${item/Description};
+                                                                title string:${item/Description};" alt="" title=""></div>
+                        <div class="boximagemDois">
+                            <div class="boxImagemHome">
+                                <img src="imagemDestaque.png" tal:attributes="src string:${item/getURL}/capa-destaque;
+                                                                              alt string:${item/Description};
+                                                                              title string:${item/Description};" alt="" title=""  
+                                     height="430px" class="img_paginaInicial"/>
+                            </div>
+                        </div>
+                    </tal:block>
+                  </div>
+                </div>
+            </div>
+	</div>
+    </metal:block>
+</metal:block>

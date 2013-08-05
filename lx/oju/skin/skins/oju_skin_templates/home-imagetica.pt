@@ -1,0 +1,61 @@
+<metal:block metal:use-macro="context/main_template/macros/master">
+<meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+    <metal:block metal:fill-slot="main">
+
+        <div class="row">
+          <div class="col guImagetica">
+            
+            
+            <input type="hidden" id="url" tal:attributes="value string:${context/absolute_url}/apresentacao"/>
+            <div class="guImageticaMenu" tal:define=" caminho python: '/'.join(context.getPhysicalPath());
+                                              lista python:context.portal_catalog(path={'query':caminho, 'depth':1},
+                                                                                               sort_on='getObjPositionInParent')">
+       
+                <ul class="navigation-imagetica">
+                    <tal:block tal:repeat="item lista">
+                              <li>
+                                  <a href="" tal:attributes="href string:${item/getURL}" class="link"
+                                              tal:content="item/Title">sobre o site</a>
+                              </li>
+                    </tal:block>
+                </ul>
+       
+            </div>
+            
+            
+            
+            
+          </div>
+        </div>
+    
+    <br />
+    
+    <div id="page"></div>   
+    
+
+    <script>
+	    $(document).ready(function(){
+	    
+            $("#kss-spinner").show();
+            var href = $("#url").val();
+            $("#page").load(href +" #content", function() {
+                $("#kss-spinner").hide();
+            });	    
+	    
+	    
+            $(".link").click(function(event) {
+                event.preventDefault();
+                
+                $("#kss-spinner").show();
+                
+                var href = $(this).attr('href');
+                $("#page").load(href +" #content", function() {
+                    $("#kss-spinner").hide();
+                });
+            });
+	        
+        });
+    </script>          
+    </metal:block>
+</metal:block>

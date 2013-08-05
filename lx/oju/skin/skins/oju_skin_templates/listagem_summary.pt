@@ -1,0 +1,44 @@
+<metal:block metal:use-macro="context/main_template/macros/master">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <metal:block metal:fill-slot="main">
+    	
+
+		<div class="listGeral" tal:define=" 
+											caminho python:'/'.join(context.getPhysicalPath());
+											lista python:context.portal_catalog(path={'query':caminho, 'depth':1},
+                                                                                               sort_on='getObjPositionInParent',
+                                                                                               review_state='published',
+                                                                                               getExcludeFromNav = False,)">
+			<div class="listItem" tal:repeat="item lista">
+				<tal:block condition="python:item.portal_type== ['Banner', 'Link'] "
+						   tal:define="item_object item/getObject;">
+						<a href="" tal:attributes="href string:${item/getRemoteUrl}">
+						<div class="caixaImagem" tal:attributes="style string:background:url('${item/getURL}/image_thumb') no-repeat scroll center center transparent ; alt item/Title; title item/Title"
+												tal:condition="exists:item_object/image_thumb">
+                            &nbsp;
+                        </div>
+							
+							<h2 tal:content="item/Title">Item Title</h2>
+						</a>
+						<p tal:content="item/Description"></p>
+						<a href="" tal:attributes="href string:${item/getRemoteUrl}"> leia mais </a>
+				</tal:block>
+
+				<tal:block  tal:define="item_object item/getObject;"
+							tal:condition="python:item.portal_type!=['Banner', 'Link']">
+					<a href="" tal:attributes="href string:${item/getURL}">
+						<div class="caixaImagem" tal:attributes="style string:background:url('${item/getURL}/image_thumb') no-repeat scroll center center transparent; alt item/Title; title item/Title"
+												tal:condition="exists:item_object/image_thumb">
+                            &nbsp;
+                        </div>
+					
+						<h2 tal:content="item/Title">Item Title</h2>
+					</a>
+					<p tal:content="item/Description"></p>
+					<a href="" tal:attributes="href string:${item/getURL}"> leia mais </a>
+				</tal:block>
+			</div>
+		</div>
+        
+    </metal:block>
+</metal:block>

@@ -1,0 +1,46 @@
+/* 
+    note: 
+    take care here since the Sunburst Theme uses IE8.js - 
+    ie hacks like: div {height:0.1%} 
+    will actually result in height 0.1% of that element
+    https://dev.plone.org/plone/ticket/10417
+
+
+.section-noticias .navigation-portal,
+.section-processos-e-poeticas-visuais .navigation-portal,
+.section-produtos-servicos .navigation-portal,
+.section-imagetica .navigation-portal, 
+.section-sobre-o-site .navigation-portal{
+margin-top: 13px !important;
+}
+*/
+.contents-sobre{
+margin-top: 30px !important;
+}
+
+.section-produtos-servicos .contents-sobre{
+  margin-top: 20px !important;
+
+}
+.section-processos-e-poeticas-visuais .contents-sobre{
+  margin-top: 60px !important;}
+  
+.section-imagetica .contents-sobre{
+ margin-top: 70px !important;
+
+}
+
+
+.boximagemDois{
+background:#FFFFFF !important;
+}
+
+
+#portaltab-noticias a {
+    padding-left: 0 !important;
+
+}
+
+.navigation-portal{
+list-style: none outside none !important;
+}
